@@ -1,8 +1,11 @@
 ﻿Public Class Form1
     Dim harga As Integer
     Dim totalBayar As Integer
+    Dim cashback As Integer
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         hargaInput.ReadOnly = True
+        userInput.ReadOnly = True
         jumlahInput.ReadOnly = True
         totalHargaOutput.ReadOnly = True
         totalBayarOutput.ReadOnly = True
@@ -10,15 +13,16 @@
         bayarInput.ReadOnly = True
         kembalianOutput.ReadOnly = True
         btnProses.Enabled = False
+        cashbackOutput.Text = ""
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles jenisPaket.SelectedIndexChanged
-        jumlahInput.ReadOnly = False
+        userInput.ReadOnly = False
         jumlahInput.Text = ""
         If jenisPaket.Text.Trim = "" Then
-            jumlahInput.Text = ""
+            userInput.Text = ""
             hargaInput.Text = ""
-            jumlahInput.ReadOnly = True
+            userInput.ReadOnly = True
         End If
         Select Case jenisPaket.Text.Trim.ToUpper
             Case "REGULER"
@@ -53,6 +57,14 @@
             totalBayar = totalHarga - diskon
             totalBayarOutput.Text = totalBayar
             bayarInput.ReadOnly = False
+
+            If totalHarga >= 100000 Then
+                cashback = 5000
+                cashbackOutput.Text = "Selamat Anda Mendapat Cash Back 5K"
+            Else
+                cashback = 0
+                cashbackOutput.Text = "Maaf anda belum mendapat cashback"
+            End If
         End If
     End Sub
 
@@ -68,6 +80,7 @@
 
     Private Sub bayarInput_TextChanged(sender As Object, e As EventArgs) Handles bayarInput.TextChanged
         btnProses.Enabled = True
+        kembalianOutput.Text = ""
         If bayarInput.Text.Trim = "" Then
             btnProses.Enabled = False
         End If
@@ -79,7 +92,7 @@
         If IsNumeric(bayarInput.Text) Then
             bayar = CInt(bayarInput.Text)
             If bayar >= totalBayar Then
-                kembalian = bayar - totalBayar
+                kembalian = bayar - totalBayar + cashback
                 kembalianOutput.Text = kembalian
             Else
                 MessageBox.Show("Maaf Uang Anda Kurang Bro", "PERINGATAN")
@@ -93,14 +106,25 @@
     Private Sub btnUlangi_Click(sender As Object, e As EventArgs) Handles btnUlangi.Click
         jenisPaket.Text = ""
         hargaInput.Text = ""
+        userInput.Text = ""
         jumlahInput.Text = ""
         bayarInput.Text = ""
         kembalianOutput.Text = ""
         jumlahInput.ReadOnly = True
+        userInput.ReadOnly = True
         btnProses.Enabled = False
+        cashbackOutput.Text = ""
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         End
+    End Sub
+
+    Private Sub userInput_TextChanged(sender As Object, e As EventArgs) Handles userInput.TextChanged
+        jumlahInput.ReadOnly = False
+        If userInput.Text.Trim = "" Then
+            jumlahInput.Text = ""
+            jumlahInput.ReadOnly = True
+        End If
     End Sub
 End Class
