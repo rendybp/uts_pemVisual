@@ -47,10 +47,10 @@ Partial Class Form1
         Me.Label11 = New System.Windows.Forms.Label()
         Me.cashbackOutput = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label21 = New System.Windows.Forms.Label()
+        Me.ucapan = New System.Windows.Forms.Label()
         Me.hasilKembalian = New System.Windows.Forms.Label()
         Me.hasilBayar = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
+        Me.pembatas = New System.Windows.Forms.Label()
         Me.hasilTotalBayar = New System.Windows.Forms.Label()
         Me.hasilDiskon = New System.Windows.Forms.Label()
         Me.hasilTotalHarga = New System.Windows.Forms.Label()
@@ -145,7 +145,7 @@ Partial Class Form1
         'jenisPaket
         '
         Me.jenisPaket.FormattingEnabled = True
-        Me.jenisPaket.Items.AddRange(New Object() {"REGULER", "VIP", "BATTLE ARENA"})
+        Me.jenisPaket.Items.AddRange(New Object() {"Reguler", "VIP", "Battle Arena"})
         Me.jenisPaket.Location = New System.Drawing.Point(228, 97)
         Me.jenisPaket.Name = "jenisPaket"
         Me.jenisPaket.Size = New System.Drawing.Size(249, 28)
@@ -266,10 +266,10 @@ Partial Class Form1
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label21)
+        Me.GroupBox1.Controls.Add(Me.ucapan)
         Me.GroupBox1.Controls.Add(Me.hasilKembalian)
         Me.GroupBox1.Controls.Add(Me.hasilBayar)
-        Me.GroupBox1.Controls.Add(Me.Label18)
+        Me.GroupBox1.Controls.Add(Me.pembatas)
         Me.GroupBox1.Controls.Add(Me.hasilTotalBayar)
         Me.GroupBox1.Controls.Add(Me.hasilDiskon)
         Me.GroupBox1.Controls.Add(Me.hasilTotalHarga)
@@ -283,24 +283,24 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Hasil"
         '
-        'Label21
+        'ucapan
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(111, 388)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(131, 20)
-        Me.Label21.TabIndex = 9
-        Me.Label21.Text = "Selamat Bermain"
+        Me.ucapan.AutoSize = True
+        Me.ucapan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ucapan.Location = New System.Drawing.Point(111, 388)
+        Me.ucapan.Name = "ucapan"
+        Me.ucapan.Size = New System.Drawing.Size(131, 20)
+        Me.ucapan.TabIndex = 9
+        Me.ucapan.Text = "Selamat Bermain"
         '
         'hasilKembalian
         '
         Me.hasilKembalian.AutoSize = True
         Me.hasilKembalian.Location = New System.Drawing.Point(33, 346)
         Me.hasilKembalian.Name = "hasilKembalian"
-        Me.hasilKembalian.Size = New System.Drawing.Size(107, 20)
+        Me.hasilKembalian.Size = New System.Drawing.Size(111, 20)
         Me.hasilKembalian.TabIndex = 8
-        Me.hasilKembalian.Text = "Kembalian     :"
+        Me.hasilKembalian.Text = "Kembalian      :"
         '
         'hasilBayar
         '
@@ -311,28 +311,28 @@ Partial Class Form1
         Me.hasilBayar.TabIndex = 7
         Me.hasilBayar.Text = "Bayar             :"
         '
-        'Label18
+        'pembatas
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(34, 275)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(279, 20)
-        Me.Label18.TabIndex = 6
-        Me.Label18.Text = "=============================="
+        Me.pembatas.AutoSize = True
+        Me.pembatas.Location = New System.Drawing.Point(34, 275)
+        Me.pembatas.Name = "pembatas"
+        Me.pembatas.Size = New System.Drawing.Size(279, 20)
+        Me.pembatas.TabIndex = 6
+        Me.pembatas.Text = "=============================="
         '
         'hasilTotalBayar
         '
         Me.hasilTotalBayar.AutoSize = True
-        Me.hasilTotalBayar.Location = New System.Drawing.Point(34, 232)
+        Me.hasilTotalBayar.Location = New System.Drawing.Point(35, 230)
         Me.hasilTotalBayar.Name = "hasilTotalBayar"
-        Me.hasilTotalBayar.Size = New System.Drawing.Size(105, 20)
+        Me.hasilTotalBayar.Size = New System.Drawing.Size(109, 20)
         Me.hasilTotalBayar.TabIndex = 5
-        Me.hasilTotalBayar.Text = "Total Bayar   :"
+        Me.hasilTotalBayar.Text = "Total Bayar    :"
         '
         'hasilDiskon
         '
         Me.hasilDiskon.AutoSize = True
-        Me.hasilDiskon.Location = New System.Drawing.Point(33, 194)
+        Me.hasilDiskon.Location = New System.Drawing.Point(34, 192)
         Me.hasilDiskon.Name = "hasilDiskon"
         Me.hasilDiskon.Size = New System.Drawing.Size(106, 20)
         Me.hasilDiskon.TabIndex = 4
@@ -341,25 +341,25 @@ Partial Class Form1
         'hasilTotalHarga
         '
         Me.hasilTotalHarga.AutoSize = True
-        Me.hasilTotalHarga.Location = New System.Drawing.Point(31, 157)
+        Me.hasilTotalHarga.Location = New System.Drawing.Point(32, 154)
         Me.hasilTotalHarga.Name = "hasilTotalHarga"
-        Me.hasilTotalHarga.Size = New System.Drawing.Size(108, 20)
+        Me.hasilTotalHarga.Size = New System.Drawing.Size(112, 20)
         Me.hasilTotalHarga.TabIndex = 3
-        Me.hasilTotalHarga.Text = "Total Harga   :"
+        Me.hasilTotalHarga.Text = "Total Harga    :"
         '
         'hasilJam
         '
         Me.hasilJam.AutoSize = True
-        Me.hasilJam.Location = New System.Drawing.Point(32, 119)
+        Me.hasilJam.Location = New System.Drawing.Point(32, 118)
         Me.hasilJam.Name = "hasilJam"
-        Me.hasilJam.Size = New System.Drawing.Size(107, 20)
+        Me.hasilJam.Size = New System.Drawing.Size(118, 20)
         Me.hasilJam.TabIndex = 2
-        Me.hasilJam.Text = "Jml Jam         :"
+        Me.hasilJam.Text = "Jumlah Jam     :"
         '
         'hasilPaket
         '
         Me.hasilPaket.AutoSize = True
-        Me.hasilPaket.Location = New System.Drawing.Point(33, 82)
+        Me.hasilPaket.Location = New System.Drawing.Point(34, 82)
         Me.hasilPaket.Name = "hasilPaket"
         Me.hasilPaket.Size = New System.Drawing.Size(106, 20)
         Me.hasilPaket.TabIndex = 1
@@ -443,9 +443,9 @@ Partial Class Form1
     Friend WithEvents hasilJam As System.Windows.Forms.Label
     Friend WithEvents hasilPaket As System.Windows.Forms.Label
     Friend WithEvents hasilUser As System.Windows.Forms.Label
-    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents ucapan As System.Windows.Forms.Label
     Friend WithEvents hasilKembalian As System.Windows.Forms.Label
     Friend WithEvents hasilBayar As System.Windows.Forms.Label
-    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents pembatas As System.Windows.Forms.Label
 
 End Class

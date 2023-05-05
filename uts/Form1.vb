@@ -14,6 +14,7 @@
         kembalianOutput.ReadOnly = True
         btnProses.Enabled = False
         cashbackOutput.Text = ""
+        resetHasil()
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles jenisPaket.SelectedIndexChanged
@@ -41,6 +42,7 @@
         Dim jumlah As Integer
         Dim totalHarga As Integer
         Dim diskon As Integer
+        bayarInput.Text = ""
         If jumlahInput.Text.Trim = "" Then
             totalHargaOutput.Text = ""
             diskonOutput.Text = ""
@@ -97,6 +99,17 @@
             If bayar >= totalBayar Then
                 kembalian = bayar - totalBayar + cashback
                 kembalianOutput.Text = kembalian
+                hasilUser.Text = "User               :   " & userInput.Text
+                hasilPaket.Text = "Paket             :   " & jenisPaket.Text
+                hasilJam.Text = "Jumlah Jam     :   " & jumlahInput.Text & " Jam"
+                hasilTotalHarga.Text = "Total Harga    :   Rp." & totalHargaOutput.Text
+                hasilDiskon.Text = "Diskon           :   Rp." & diskonOutput.Text
+                hasilTotalBayar.Text = "Total Bayar    :   Rp." & totalBayarOutput.Text
+                pembatas.Text = "=============================="
+                hasilBayar.Text = "Bayar             :   Rp." & bayarInput.Text
+                hasilKembalian.Text = "Kembalian      :   Rp." & kembalian
+                ucapan.Text = "Selamat Bermain"
+
             Else
                 MessageBox.Show("Maaf Uang Anda Kurang Bro", "PERINGATAN")
                 bayarInput.Text = ""
@@ -117,6 +130,7 @@
         userInput.ReadOnly = True
         btnProses.Enabled = False
         cashbackOutput.Text = ""
+        resetHasil()
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
@@ -129,6 +143,19 @@
             jumlahInput.Text = ""
             jumlahInput.ReadOnly = True
         End If
+    End Sub
+
+    Sub resetHasil()
+        hasilUser.Text = ""
+        hasilPaket.Text = ""
+        hasilJam.Text = ""
+        hasilTotalHarga.Text = ""
+        hasilTotalBayar.Text = ""
+        hasilDiskon.Text = ""
+        hasilBayar.Text = ""
+        hasilKembalian.Text = ""
+        pembatas.Text = ""
+        ucapan.Text = ""
     End Sub
 
 End Class
