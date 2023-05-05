@@ -46,6 +46,7 @@
             diskonOutput.Text = ""
             totalBayarOutput.Text = ""
             bayarInput.Text = ""
+            cashbackOutput.Text = ""
             bayarInput.ReadOnly = True
         End If
         If IsNumeric(jumlahInput.Text) Then
@@ -61,9 +62,11 @@
             If totalHarga >= 100000 Then
                 cashback = 5000
                 cashbackOutput.Text = "Selamat Anda Mendapat Cash Back 5K"
+                cashbackOutput.ForeColor = Color.Green
             Else
                 cashback = 0
                 cashbackOutput.Text = "Maaf anda belum mendapat cashback"
+                cashbackOutput.ForeColor = Color.Red
             End If
         End If
     End Sub
@@ -127,4 +130,5 @@
             jumlahInput.ReadOnly = True
         End If
     End Sub
+
 End Class
