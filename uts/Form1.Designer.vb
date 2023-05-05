@@ -57,14 +57,16 @@ Partial Class Form1
         Me.hasilJam = New System.Windows.Forms.Label()
         Me.hasilPaket = New System.Windows.Forms.Label()
         Me.hasilUser = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(141, 22)
+        Me.Label1.Location = New System.Drawing.Point(147, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(277, 20)
         Me.Label1.TabIndex = 0
@@ -73,7 +75,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(79, 100)
+        Me.Label2.Location = New System.Drawing.Point(81, 108)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(91, 20)
         Me.Label2.TabIndex = 1
@@ -82,7 +84,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(79, 150)
+        Me.Label3.Location = New System.Drawing.Point(81, 158)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(90, 20)
         Me.Label3.TabIndex = 2
@@ -91,7 +93,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(79, 281)
+        Me.Label4.Location = New System.Drawing.Point(81, 298)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(92, 20)
         Me.Label4.TabIndex = 3
@@ -100,7 +102,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(79, 232)
+        Me.Label5.Location = New System.Drawing.Point(81, 249)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(60, 20)
         Me.Label5.TabIndex = 4
@@ -109,7 +111,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(79, 330)
+        Me.Label6.Location = New System.Drawing.Point(81, 347)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(58, 20)
         Me.Label6.TabIndex = 5
@@ -118,7 +120,7 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(79, 380)
+        Me.Label7.Location = New System.Drawing.Point(81, 397)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(89, 20)
         Me.Label7.TabIndex = 6
@@ -127,7 +129,7 @@ Partial Class Form1
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(79, 464)
+        Me.Label8.Location = New System.Drawing.Point(81, 481)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(50, 20)
         Me.Label8.TabIndex = 7
@@ -136,7 +138,7 @@ Partial Class Form1
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(79, 518)
+        Me.Label9.Location = New System.Drawing.Point(81, 535)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(83, 20)
         Me.Label9.TabIndex = 8
@@ -146,63 +148,63 @@ Partial Class Form1
         '
         Me.jenisPaket.FormattingEnabled = True
         Me.jenisPaket.Items.AddRange(New Object() {"Reguler", "VIP", "Battle Arena"})
-        Me.jenisPaket.Location = New System.Drawing.Point(228, 97)
+        Me.jenisPaket.Location = New System.Drawing.Point(230, 105)
         Me.jenisPaket.Name = "jenisPaket"
         Me.jenisPaket.Size = New System.Drawing.Size(249, 28)
         Me.jenisPaket.TabIndex = 9
         '
         'hargaInput
         '
-        Me.hargaInput.Location = New System.Drawing.Point(228, 143)
+        Me.hargaInput.Location = New System.Drawing.Point(230, 151)
         Me.hargaInput.Name = "hargaInput"
         Me.hargaInput.Size = New System.Drawing.Size(249, 26)
         Me.hargaInput.TabIndex = 10
         '
         'jumlahInput
         '
-        Me.jumlahInput.Location = New System.Drawing.Point(228, 229)
+        Me.jumlahInput.Location = New System.Drawing.Point(230, 246)
         Me.jumlahInput.Name = "jumlahInput"
         Me.jumlahInput.Size = New System.Drawing.Size(249, 26)
         Me.jumlahInput.TabIndex = 11
         '
         'totalHargaOutput
         '
-        Me.totalHargaOutput.Location = New System.Drawing.Point(228, 278)
+        Me.totalHargaOutput.Location = New System.Drawing.Point(230, 295)
         Me.totalHargaOutput.Name = "totalHargaOutput"
         Me.totalHargaOutput.Size = New System.Drawing.Size(249, 26)
         Me.totalHargaOutput.TabIndex = 12
         '
         'diskonOutput
         '
-        Me.diskonOutput.Location = New System.Drawing.Point(228, 327)
+        Me.diskonOutput.Location = New System.Drawing.Point(230, 344)
         Me.diskonOutput.Name = "diskonOutput"
         Me.diskonOutput.Size = New System.Drawing.Size(249, 26)
         Me.diskonOutput.TabIndex = 13
         '
         'totalBayarOutput
         '
-        Me.totalBayarOutput.Location = New System.Drawing.Point(228, 377)
+        Me.totalBayarOutput.Location = New System.Drawing.Point(230, 394)
         Me.totalBayarOutput.Name = "totalBayarOutput"
         Me.totalBayarOutput.Size = New System.Drawing.Size(249, 26)
         Me.totalBayarOutput.TabIndex = 14
         '
         'bayarInput
         '
-        Me.bayarInput.Location = New System.Drawing.Point(228, 461)
+        Me.bayarInput.Location = New System.Drawing.Point(230, 478)
         Me.bayarInput.Name = "bayarInput"
         Me.bayarInput.Size = New System.Drawing.Size(249, 26)
         Me.bayarInput.TabIndex = 15
         '
         'kembalianOutput
         '
-        Me.kembalianOutput.Location = New System.Drawing.Point(228, 515)
+        Me.kembalianOutput.Location = New System.Drawing.Point(230, 532)
         Me.kembalianOutput.Name = "kembalianOutput"
         Me.kembalianOutput.Size = New System.Drawing.Size(249, 26)
         Me.kembalianOutput.TabIndex = 16
         '
         'btnProses
         '
-        Me.btnProses.Location = New System.Drawing.Point(117, 591)
+        Me.btnProses.Location = New System.Drawing.Point(130, 591)
         Me.btnProses.Name = "btnProses"
         Me.btnProses.Size = New System.Drawing.Size(75, 38)
         Me.btnProses.TabIndex = 17
@@ -211,7 +213,7 @@ Partial Class Form1
         '
         'btnUlangi
         '
-        Me.btnUlangi.Location = New System.Drawing.Point(228, 591)
+        Me.btnUlangi.Location = New System.Drawing.Point(241, 591)
         Me.btnUlangi.Name = "btnUlangi"
         Me.btnUlangi.Size = New System.Drawing.Size(75, 38)
         Me.btnUlangi.TabIndex = 18
@@ -220,7 +222,7 @@ Partial Class Form1
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(343, 591)
+        Me.btnExit.Location = New System.Drawing.Point(356, 591)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 38)
         Me.btnExit.TabIndex = 19
@@ -230,7 +232,7 @@ Partial Class Form1
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(79, 194)
+        Me.Label10.Location = New System.Drawing.Point(81, 204)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(83, 20)
         Me.Label10.TabIndex = 20
@@ -238,7 +240,7 @@ Partial Class Form1
         '
         'userInput
         '
-        Me.userInput.Location = New System.Drawing.Point(228, 188)
+        Me.userInput.Location = New System.Drawing.Point(230, 198)
         Me.userInput.Name = "userInput"
         Me.userInput.Size = New System.Drawing.Size(249, 26)
         Me.userInput.TabIndex = 21
@@ -247,7 +249,7 @@ Partial Class Form1
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(113, 53)
+        Me.Label11.Location = New System.Drawing.Point(114, 60)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(344, 20)
         Me.Label11.TabIndex = 22
@@ -257,7 +259,7 @@ Partial Class Form1
         '
         Me.cashbackOutput.AutoSize = True
         Me.cashbackOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cashbackOutput.Location = New System.Drawing.Point(128, 422)
+        Me.cashbackOutput.Location = New System.Drawing.Point(130, 439)
         Me.cashbackOutput.Name = "cashbackOutput"
         Me.cashbackOutput.Size = New System.Drawing.Size(290, 20)
         Me.cashbackOutput.TabIndex = 23
@@ -276,7 +278,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.hasilJam)
         Me.GroupBox1.Controls.Add(Me.hasilPaket)
         Me.GroupBox1.Controls.Add(Me.hasilUser)
-        Me.GroupBox1.Location = New System.Drawing.Point(561, 150)
+        Me.GroupBox1.Location = New System.Drawing.Point(549, 193)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(347, 436)
         Me.GroupBox1.TabIndex = 24
@@ -374,11 +376,22 @@ Partial Class Form1
         Me.hasilUser.TabIndex = 0
         Me.hasilUser.Text = "User               :"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.logo_valorant
+        Me.PictureBox1.Location = New System.Drawing.Point(549, 22)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(347, 149)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 25
+        Me.PictureBox1.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(955, 732)
+        Me.ClientSize = New System.Drawing.Size(955, 669)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.cashbackOutput)
         Me.Controls.Add(Me.Label11)
@@ -408,6 +421,7 @@ Partial Class Form1
         Me.Text = "Warnet GGWP Game Center"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -447,5 +461,6 @@ Partial Class Form1
     Friend WithEvents hasilKembalian As System.Windows.Forms.Label
     Friend WithEvents hasilBayar As System.Windows.Forms.Label
     Friend WithEvents pembatas As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 
 End Class
