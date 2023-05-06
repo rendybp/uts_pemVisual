@@ -119,6 +119,12 @@
   <ItemGroup>
     <None Include="Resources\logo_valorant.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\logo_ls.jpg" />
+    <Content Include="Resources\logo_pb.jpeg" />
+    <Content Include="Resources\logo_pubg.jpeg" />
+    <Content Include="Resources\lol_logo.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

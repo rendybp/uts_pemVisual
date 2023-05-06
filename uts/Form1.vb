@@ -2,6 +2,7 @@
     Dim harga As Integer
     Dim totalBayar As Integer
     Dim cashback As Integer
+    Dim counterSlideShow As Integer
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         hargaInput.ReadOnly = True
@@ -15,6 +16,12 @@
         btnProses.Enabled = False
         cashbackOutput.Text = ""
         resetHasil()
+
+        Timer1.Interval = 5000
+        Timer1.Start()
+
+        counterSlideShow = 0
+
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles jenisPaket.SelectedIndexChanged
@@ -158,4 +165,29 @@
         ucapan.Text = ""
     End Sub
 
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        counterSlideShow += 1
+
+        If (counterSlideShow = 5) Then
+            counterSlideShow = 0
+        End If
+
+        Select Case counterSlideShow
+            Case 0
+                PictureBox2.BackgroundImage = My.Resources.logo_valorant
+
+            Case 1
+                PictureBox2.BackgroundImage = My.Resources.logo_ls
+
+            Case 2
+                PictureBox2.BackgroundImage = My.Resources.logo_pb
+
+            Case 3
+                PictureBox2.BackgroundImage = My.Resources.logo_pubg
+
+            Case 4
+                PictureBox2.BackgroundImage = My.Resources.lol_logo
+
+        End Select
+    End Sub
 End Class

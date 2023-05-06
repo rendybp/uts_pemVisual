@@ -121,4 +121,16 @@
   <data name="logo_valorant" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_valorant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logo_ls" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_ls.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_pb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_pb.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_pubg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_pubg.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lol_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lol_logo.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
