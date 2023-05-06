@@ -1,0 +1,13 @@
+D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\uts_pemvis\uts\bin\Release\uts.exe.config
+D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\uts_pemvis\uts\bin\Release\uts.exe
+D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\uts_pemvis\uts\bin\Release\uts.pdb
+D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\uts_pemvis\uts\bin\Release\uts.xml
+D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\uts_pemvis\uts\obj\Release\uts.vbproj.AssemblyReference.cache
+D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\uts_pemvis\uts\obj\Release\uts.vbproj.SuggestedBindingRedirects.cache
+D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\uts_pemvis\uts\obj\Release\WindowsApplication1.Form1.resources
+D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\uts_pemvis\uts\obj\Release\WindowsApplication1.Resources.resources
+D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\uts_pemvis\uts\obj\Release\uts.vbproj.GenerateResource.cache
+D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\uts_pemvis\uts\obj\Release\uts.vbproj.CoreCompileInputs.cache
+D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\uts_pemvis\uts\obj\Release\uts.exe
+D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\uts_pemvis\uts\obj\Release\uts.xml
+D:\Materi Kuliah Ikhsan\Semester 4\Pemrograman Visual\uts_pemvis\uts\obj\Release\uts.pdb
